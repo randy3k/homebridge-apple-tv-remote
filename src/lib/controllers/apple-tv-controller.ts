@@ -39,7 +39,7 @@ export class AppleTvController {
             // Adds the characteristics for the service
             const onCharacteristic = onOffSwitchService.useCharacteristic<boolean>(Homebridge.Characteristics.On);
             onCharacteristic.valueChanged = newValue => {
-                if (onCharacteristic.value !== newValue) {
+                if (true) {
                     platform.logger.info(`[${deviceConfiguration.name}] On/off switch changed to ${newValue}`);
                     try {
                         if (newValue) {
@@ -68,7 +68,7 @@ export class AppleTvController {
             // Adds the characteristics for the service
             const onCharacteristic = playPauseSwitchService.useCharacteristic<boolean>(Homebridge.Characteristics.On);
             onCharacteristic.valueChanged = newValue => {
-                if (onCharacteristic.value !== newValue) {
+                if (true) {
                     platform.logger.info(`[${deviceConfiguration.name}] Play/pause switch changed to ${newValue}`);
                     try {
                         if (newValue) {
@@ -98,7 +98,7 @@ export class AppleTvController {
                 // Adds the characteristics for the service
                 const onCharacteristic = playPauseSwitchService.useCharacteristic<boolean>(Homebridge.Characteristics.On);
                 onCharacteristic.valueChanged = newValue => {
-                    if (onCharacteristic.value !== newValue) {
+                    if (true) {
                         platform.logger.info(`[${deviceConfiguration.name}] Play/pause switch changed to ${newValue}`);
                         try {
                             if (newValue) {
